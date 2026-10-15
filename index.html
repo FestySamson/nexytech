@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NexyTech | Web Development, Design &amp; Digital Marketing</title>
+<meta name="description" content="NexyTech is a digital agency offering web development, UI/UX design, graphics design, digital marketing, SEO and cybersecurity guidance for businesses, startups and organizations.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#6D28D9">
+<!-- TODO: replace https://www.example.com with the production domain -->
+<link rel="canonical" href="https://www.example.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="NexyTech | Web Development, Design &amp; Digital Marketing">
+<meta property="og:description" content="Websites, product design, marketing and cybersecurity guidance from one connected team.">
+<meta property="og:url" content="https://www.example.com/">
+<meta property="og:image" content="https://www.example.com/og-image.jpg"><!-- TODO: add 1200x630 image -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NexyTech | Web Development, Design &amp; Digital Marketing">
+<meta name="twitter:description" content="Websites, product design, marketing and cybersecurity guidance from one connected team.">
+<meta name="twitter:image" content="https://www.example.com/og-image.jpg">
+<!-- TODO: replace with a real favicon file -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%236D28D9'/%3E%3Cpath d='M9 24V8l14 16V8' fill='none' stroke='white' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<!-- Tailwind Play CDN: prototype only. See README for a production build. -->
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { brand: '#6D28D9', deep: '#4C1D95', ink: '#18181B', muted: '#52525B', soft: '#F8F7FC' },
+  fontFamily: { display: ['Manrope', 'sans-serif'], sans: ['Inter', 'sans-serif'] }
+}}};
+</script>
+<style>
+  html { scroll-padding-top: 5rem; }
+  body { font-family: Inter, sans-serif; color: #18181B; overflow-x: hidden; }
+  h1, h2, h3, .font-display { font-family: Manrope, sans-serif; letter-spacing: -0.02em; }
+  :focus-visible { outline: 3px solid #6D28D9; outline-offset: 3px; border-radius: 4px; }
+  .js [data-reveal] { opacity: 0; transform: translateY(12px); transition: opacity .5s ease, transform .5s ease; }
+  .js [data-reveal].is-visible { opacity: 1; transform: none; }
+  .img-frame { background: #EDE9FE; }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { transition: none !important; animation: none !important; }
+    .js [data-reveal] { opacity: 1; transform: none; }
+  }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "NexyTech",
+  "url": "https://www.example.com/",
+  "email": "contact@nexytech.com",
+  "telephone": "+23481786364435",
+  "description": "Digital agency offering web development, design, digital marketing and cybersecurity guidance."
+}
+</script>
+</head>
+<body class="bg-white text-ink antialiased">
+<svg width="0" height="0" class="absolute" aria-hidden="true"><symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.03-.52-.07-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.7.63.71.23 1.36.2 1.87.12.57-.09 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.12-.27-.2-.57-.35M12.05 21.79a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.89 9.89-9.89 2.64 0 5.12 1.03 6.99 2.9a9.83 9.83 0 0 1 2.89 7c0 5.45-4.44 9.88-9.89 9.88M20.46 3.49A11.8 11.8 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.9 11.9 0 0 0 5.69 1.45c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.17-3.48-8.42"/></symbol></svg>
+
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[100] focus:rounded focus:bg-brand focus:px-4 focus:py-2 focus:text-white">Skip to content</a>
+
+<header class="sticky top-0 z-50 border-b border-zinc-200 bg-white/95 backdrop-blur">
+  <nav class="mx-auto flex h-16 max-w-6xl items-center justify-between px-5 sm:px-8" aria-label="Main">
+    <a href="#home" class="flex items-center gap-2 font-display text-xl font-extrabold text-ink" aria-label="NexyTech home">
+      <svg width="26" height="26" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="#6D28D9"/><path d="M9 24V8l14 16V8" fill="none" stroke="#fff" stroke-width="3"/></svg>
+      Nexy<span class="text-brand">Tech</span>
+    </a>
+    <ul id="nav-menu" class="hidden items-center gap-8 text-sm font-medium text-muted lg:flex">
+      <li><a class="nav-link hover:text-brand" href="#home">Home</a></li>
+      <li><a class="nav-link hover:text-brand" href="#services">Services</a></li>
+      <li><a class="nav-link hover:text-brand" href="#about">About</a></li>
+      <li><a class="nav-link hover:text-brand" href="#process">Our Process</a></li>
+      <li><a class="nav-link hover:text-brand" href="#projects">Projects</a></li>
+      <li><a class="nav-link hover:text-brand" href="#contact">Contact</a></li>
+    </ul>
+    <div class="flex items-center gap-2">
+      <a href="#contact" class="hidden min-h-[44px] items-center rounded-md bg-brand px-5 text-sm font-semibold text-white transition hover:bg-deep sm:inline-flex">Let's Talk</a>
+      <button id="menu-toggle" type="button" class="inline-flex h-11 w-11 items-center justify-center rounded-md border border-zinc-200 lg:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <i data-lucide="menu" class="h-5 w-5"></i>
+      </button>
+    </div>
+  </nav>
+  <div id="mobile-menu" class="hidden border-t border-zinc-200 bg-white lg:hidden">
+    <ul class="mx-auto max-w-6xl px-5 py-2 sm:px-8">
+      <li><a class="mobile-link block py-3 font-medium" href="#home">Home</a></li>
+      <li><a class="mobile-link block py-3 font-medium" href="#services">Services</a></li>
+      <li><a class="mobile-link block py-3 font-medium" href="#about">About</a></li>
+      <li><a class="mobile-link block py-3 font-medium" href="#process">Our Process</a></li>
+      <li><a class="mobile-link block py-3 font-medium" href="#projects">Projects</a></li>
+      <li><a class="mobile-link block py-3 font-medium" href="#contact">Contact</a></li>
+      <li class="py-3"><a class="mobile-link flex min-h-[44px] items-center justify-center rounded-md bg-brand font-semibold text-white" href="#contact">Let's Talk</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="main">
+<!-- Hero -->
+<section id="home" class="mx-auto grid max-w-6xl items-center gap-10 px-5 py-14 sm:px-8 lg:grid-cols-[1.05fr_1fr] lg:gap-16 lg:py-24">
+  <div>
+    <h1 class="text-[clamp(2.1rem,5.2vw,3.6rem)] font-extrabold leading-[1.08] text-ink">Digital Solutions That Move Your Business Forward.</h1>
+    <p class="mt-6 max-w-xl text-lg leading-relaxed text-muted">From high-performing websites and thoughtful product design to strategic marketing and cybersecurity, NexyTech helps businesses build, grow, and thrive in the digital world.</p>
+    <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+      <a href="#contact" class="inline-flex min-h-[48px] items-center justify-center rounded-md bg-brand px-6 font-semibold text-white transition hover:bg-deep">Start a Project</a>
+      <a href="#services" class="inline-flex min-h-[48px] items-center justify-center rounded-md border border-zinc-300 px-6 font-semibold text-ink transition hover:border-brand hover:text-brand">Explore Our Services</a>
+    </div>
+  </div>
+  <div class="img-frame relative overflow-hidden rounded-lg border-b-4 border-brand">
+    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&h=800&q=75" width="1000" height="800" fetchpriority="high" decoding="async" alt="A team of designers and developers collaborating around a laptop" class="aspect-[5/4] h-full w-full object-cover object-center">
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="border-t border-zinc-200 bg-soft py-16 lg:py-24">
+  <div class="mx-auto max-w-6xl px-5 sm:px-8">
+    <div class="max-w-2xl" data-reveal>
+      <h2 class="text-3xl font-extrabold sm:text-4xl">Everything You Need to Grow Digitally.</h2>
+      <p class="mt-4 text-lg leading-relaxed text-muted">Practical digital expertise, creative thinking, and technology working together to help your business succeed.</p>
+    </div>
+    <div class="mt-12 grid gap-px overflow-hidden rounded-lg border border-zinc-200 bg-zinc-200 sm:grid-cols-2 lg:grid-cols-4" data-reveal>
+      <article class="bg-deep p-7 text-white sm:col-span-2 lg:row-span-2">
+        <i data-lucide="code-2" class="h-8 w-8" aria-hidden="true"></i>
+        <h3 class="mt-6 text-2xl font-bold">Web Development</h3>
+        <p class="mt-3 max-w-md leading-relaxed text-violet-100">Business websites, landing pages, e-commerce platforms, web applications, and custom digital solutions.</p>
+        <a href="#contact" data-service="Web Development" class="service-link mt-6 inline-flex min-h-[44px] items-center gap-2 font-semibold underline underline-offset-4">Explore Service <i data-lucide="arrow-right" class="h-4 w-4" aria-hidden="true"></i></a>
+      </article>
+      <article class="bg-white p-7"><i data-lucide="pen-tool" class="h-6 w-6 text-brand" aria-hidden="true"></i><h3 class="mt-4 text-lg font-bold">Graphics Design</h3><p class="mt-2 text-sm leading-relaxed text-muted">Brand identities, marketing creatives, social media designs, promotional materials, and visual communication.</p><a href="#contact" data-service="Graphics Design" class="service-link mt-3 inline-flex min-h-[44px] items-center text-sm font-semibold text-brand hover:underline">Explore Service</a></article>
+      <article class="bg-white p-7"><i data-lucide="layout-template" class="h-6 w-6 text-brand" aria-hidden="true"></i><h3 class="mt-4 text-lg font-bold">UI/UX and Product Design</h3><p class="mt-2 text-sm leading-relaxed text-muted">User research, wireframes, user journeys, interface design, interactive prototypes, and digital product experiences.</p><a href="#contact" data-service="UI/UX and Product Design" class="service-link mt-3 inline-flex min-h-[44px] items-center text-sm font-semibold text-brand hover:underline">Explore Service</a></article>
+      <article class="bg-white p-7"><i data-lucide="megaphone" class="h-6 w-6 text-brand" aria-hidden="true"></i><h3 class="mt-4 text-lg font-bold">Digital Marketing</h3><p class="mt-2 text-sm leading-relaxed text-muted">Social media marketing, paid advertising, search engine optimization, content strategy, and conversion-focused campaigns.</p><a href="#contact" data-service="Digital Marketing" class="service-link mt-3 inline-flex min-h-[44px] items-center text-sm font-semibold text-brand hover:underline">Explore Service</a></article>
+      <article class="bg-white p-7"><i data-lucide="shield-check" class="h-6 w-6 text-brand" aria-hidden="true"></i><h3 class="mt-4 text-lg font-bold">Cybersecurity</h3><p class="mt-2 text-sm leading-relaxed text-muted">Website security reviews, security best practices, vulnerability assessment where authorized, and improvement guidance.</p><a href="#contact" data-service="Cybersecurity" class="service-link mt-3 inline-flex min-h-[44px] items-center text-sm font-semibold text-brand hover:underline">Explore Service</a></article>
+      <article class="bg-white p-7"><i data-lucide="compass" class="h-6 w-6 text-brand" aria-hidden="true"></i><h3 class="mt-4 text-lg font-bold">Branding and Creative Strategy</h3><p class="mt-2 text-sm leading-relaxed text-muted">Brand positioning, visual identity systems, brand guidelines, and cohesive digital communication.</p><a href="#contact" data-service="Branding and Creative Strategy" class="service-link mt-3 inline-flex min-h-[44px] items-center text-sm font-semibold text-brand hover:underline">Explore Service</a></article>
+      <article class="bg-white p-7"><i data-lucide="workflow" class="h-6 w-6 text-brand" aria-hidden="true"></i><h3 class="mt-4 text-lg font-bold">IT Consulting and Digital Transformation</h3><p class="mt-2 text-sm leading-relaxed text-muted">Technology consulting, workflow improvement, digital tools, and practical solutions for business operations.</p><a href="#contact" data-service="IT Consulting and Digital Transformation" class="service-link mt-3 inline-flex min-h-[44px] items-center text-sm font-semibold text-brand hover:underline">Explore Service</a></article>
+      <article class="bg-white p-7"><i data-lucide="file-text" class="h-6 w-6 text-brand" aria-hidden="true"></i><h3 class="mt-4 text-lg font-bold">Content Creation</h3><p class="mt-2 text-sm leading-relaxed text-muted">Website content, campaign content, social media creatives, and digital storytelling.</p><a href="#contact" data-service="Content Creation" class="service-link mt-3 inline-flex min-h-[44px] items-center text-sm font-semibold text-brand hover:underline">Explore Service</a></article>
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="mx-auto grid max-w-6xl items-center gap-10 px-5 py-16 sm:px-8 lg:grid-cols-2 lg:gap-16 lg:py-24">
+  <div class="img-frame overflow-hidden rounded-lg">
+    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=900&h=700&q=75" width="900" height="700" loading="lazy" decoding="async" alt="Colleagues discussing a project in a bright modern office" class="aspect-[9/7] w-full object-cover">
+  </div>
+  <div data-reveal>
+    <h2 class="text-3xl font-extrabold sm:text-4xl">Technology Meets Creative Thinking.</h2>
+    <p class="mt-5 leading-relaxed text-muted">At NexyTech, we bring design, technology, and digital strategy together to help businesses solve problems and create better experiences for their customers. Our approach combines thoughtful design, dependable development, and practical digital solutions built around real business goals.</p>
+    <dl class="mt-8 space-y-5 border-l-2 border-brand pl-5">
+      <div><dt class="font-display font-bold">Purposeful Design</dt><dd class="text-muted">Every design decision supports usability, clarity, or business objectives.</dd></div>
+      <div><dt class="font-display font-bold">Practical Technology</dt><dd class="text-muted">We focus on reliable solutions that solve real problems.</dd></div>
+      <div><dt class="font-display font-bold">Growth-Focused Thinking</dt><dd class="text-muted">We build with long-term performance, visibility, and scalability in mind.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- Why -->
+<section id="why" class="border-t border-zinc-200 bg-soft py-16 lg:py-24">
+  <div class="mx-auto grid max-w-6xl gap-10 px-5 sm:px-8 lg:grid-cols-[1fr_1.4fr] lg:gap-16">
+    <h2 class="text-3xl font-extrabold sm:text-4xl lg:sticky lg:top-24 lg:self-start">Why Businesses Choose NexyTech.</h2>
+    <ul class="divide-y divide-zinc-200 border-y border-zinc-200" data-reveal>
+      <li class="py-6"><h3 class="font-display text-lg font-bold">One Connected Team</h3><p class="mt-1 text-muted">Design, development, and marketing can work together instead of operating in isolation.</p></li>
+      <li class="py-6"><h3 class="font-display text-lg font-bold">Business-First Approach</h3><p class="mt-1 text-muted">Recommendations are based on the client's goals, audience, and requirements.</p></li>
+      <li class="py-6"><h3 class="font-display text-lg font-bold">Quality and Attention to Detail</h3><p class="mt-1 text-muted">We care about usability, performance, accessibility, and visual consistency.</p></li>
+      <li class="py-6"><h3 class="font-display text-lg font-bold">Built for the Future</h3><p class="mt-1 text-muted">We consider maintainability, discoverability, security, and growth when planning solutions.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Process -->
+<section id="process" class="mx-auto max-w-6xl px-5 py-16 sm:px-8 lg:py-24">
+  <h2 class="max-w-2xl text-3xl font-extrabold sm:text-4xl">From Idea to Impact.</h2>
+  <ol class="mt-12 grid gap-8 border-l-2 border-zinc-200 pl-6 lg:grid-cols-4 lg:gap-6 lg:border-l-0 lg:border-t-2 lg:pl-0 lg:pt-8" data-reveal>
+    <li class="relative"><span class="absolute -left-[33px] top-1 h-3 w-3 rounded-full bg-brand lg:-top-[39px] lg:left-0"></span><span class="font-display text-2xl font-extrabold text-brand">01</span><h3 class="mt-1 font-display text-lg font-bold">Discover</h3><p class="mt-2 text-muted">We understand your business, target audience, objectives, and challenges.</p></li>
+    <li class="relative"><span class="absolute -left-[33px] top-1 h-3 w-3 rounded-full bg-brand lg:-top-[39px] lg:left-0"></span><span class="font-display text-2xl font-extrabold text-brand">02</span><h3 class="mt-1 font-display text-lg font-bold">Plan</h3><p class="mt-2 text-muted">We define the project scope, priorities, user experience, and delivery approach.</p></li>
+    <li class="relative"><span class="absolute -left-[33px] top-1 h-3 w-3 rounded-full bg-brand lg:-top-[39px] lg:left-0"></span><span class="font-display text-2xl font-extrabold text-brand">03</span><h3 class="mt-1 font-display text-lg font-bold">Design and Build</h3><p class="mt-2 text-muted">We turn the agreed plan into a polished, functional digital solution.</p></li>
+    <li class="relative"><span class="absolute -left-[33px] top-1 h-3 w-3 rounded-full bg-brand lg:-top-[39px] lg:left-0"></span><span class="font-display text-2xl font-extrabold text-brand">04</span><h3 class="mt-1 font-display text-lg font-bold">Launch and Improve</h3><p class="mt-2 text-muted">We test, deploy, review performance, and identify opportunities for improvement.</p></li>
+  </ol>
+</section>
+
+<!-- Projects -->
+<section id="projects" class="border-t border-zinc-200 bg-soft py-16 lg:py-24">
+  <div class="mx-auto max-w-6xl px-5 sm:px-8">
+    <h2 class="max-w-2xl text-3xl font-extrabold sm:text-4xl">Work Built Around Real Goals.</h2>
+    <p class="mt-4 max-w-2xl text-muted">Our verified portfolio is being prepared. The entries below are placeholders showing the layout for upcoming case studies.</p>
+    <!-- TODO: replace each placeholder: swap the img src for a real screenshot, edit text, and add <a href="..."> around the title for a live project URL. -->
+    <div class="mt-10 grid gap-8 md:grid-cols-3" data-reveal>
+      <article>
+        <div class="img-frame overflow-hidden rounded-lg"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&h=600&q=75" width="800" height="600" loading="lazy" decoding="async" alt="Placeholder image: laptop showing code" class="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105"></div>
+        <p class="mt-4 text-sm font-semibold text-brand">Web Development · Placeholder</p>
+        <h3 class="mt-1 font-display text-lg font-bold">Project title</h3>
+        <p class="mt-1 text-muted">Short description of the goal, the solution, and the outcome goes here.</p>
+      </article>
+      <article class="md:mt-10">
+        <div class="img-frame overflow-hidden rounded-lg"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&h=600&q=75" width="800" height="600" loading="lazy" decoding="async" alt="Placeholder image: workspace with analytics on a screen" class="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105"></div>
+        <p class="mt-4 text-sm font-semibold text-brand">Digital Marketing · Placeholder</p>
+        <h3 class="mt-1 font-display text-lg font-bold">Project title</h3>
+        <p class="mt-1 text-muted">Short description of the goal, the solution, and the outcome goes here.</p>
+      </article>
+      <article>
+        <div class="img-frame overflow-hidden rounded-lg"><img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&h=600&q=75" width="800" height="600" loading="lazy" decoding="async" alt="Placeholder image: developers working side by side" class="aspect-[4/3] w-full object-cover transition duration-500 hover:scale-105"></div>
+        <p class="mt-4 text-sm font-semibold text-brand">UI/UX Design · Placeholder</p>
+        <h3 class="mt-1 font-display text-lg font-bold">Project title</h3>
+        <p class="mt-1 text-muted">Short description of the goal, the solution, and the outcome goes here.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-deep py-16 text-white lg:py-20">
+  <div class="mx-auto flex max-w-6xl flex-col gap-8 px-5 sm:px-8 lg:flex-row lg:items-center lg:justify-between">
+    <div class="max-w-xl">
+      <h2 class="text-3xl font-extrabold sm:text-4xl">Have a Project in Mind?</h2>
+      <p class="mt-4 text-lg leading-relaxed text-violet-100">Let's discuss your ideas, explore the possibilities, and find the right digital solution for your business.</p>
+    </div>
+    <div class="flex flex-col gap-3 sm:flex-row">
+      <a href="https://wa.me/23481786364435?text=Hello%20NexyTech%2C%20I%20would%20like%20to%20discuss%20a%20digital%20project." target="_blank" rel="noopener noreferrer" class="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-md bg-white px-6 font-semibold text-deep transition hover:bg-violet-100"><svg class="h-5 w-5" aria-hidden="true"><use href="#wa"/></svg>Chat With Us on WhatsApp</a>
+      <a href="mailto:contact@nexytech.com" class="inline-flex min-h-[48px] items-center justify-center rounded-md border border-white/60 px-6 font-semibold transition hover:bg-white/10">Send Us an Email</a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="mx-auto max-w-3xl px-5 py-16 sm:px-8 lg:py-24">
+  <h2 class="text-3xl font-extrabold sm:text-4xl">Frequently Asked Questions</h2>
+  <div class="mt-10 divide-y divide-zinc-200 border-y border-zinc-200" id="faq-list">
+    <div class="faq-item"><h3><button type="button" class="faq-btn flex min-h-[56px] w-full items-center justify-between gap-4 py-4 text-left font-display font-bold" aria-expanded="false" aria-controls="faq-1" id="faq-b1">What services does NexyTech offer?<i data-lucide="plus" class="h-5 w-5 shrink-0 text-brand" aria-hidden="true"></i></button></h3><div id="faq-1" role="region" aria-labelledby="faq-b1" class="faq-panel pb-5 text-muted">We offer web development, graphics design, UI/UX and product design, digital marketing, cybersecurity guidance, branding, IT consulting, and content creation.</div></div>
+    <div class="faq-item"><h3><button type="button" class="faq-btn flex min-h-[56px] w-full items-center justify-between gap-4 py-4 text-left font-display font-bold" aria-expanded="false" aria-controls="faq-2" id="faq-b2">Can I hire NexyTech for a single service?<i data-lucide="plus" class="h-5 w-5 shrink-0 text-brand" aria-hidden="true"></i></button></h3><div id="faq-2" role="region" aria-labelledby="faq-b2" class="faq-panel pb-5 text-muted">Yes. You can work with us on one service, such as a logo or a website, or combine several that fit your goals.</div></div>
+    <div class="faq-item"><h3><button type="button" class="faq-btn flex min-h-[56px] w-full items-center justify-between gap-4 py-4 text-left font-display font-bold" aria-expanded="false" aria-controls="faq-3" id="faq-b3">Do you build websites for small businesses?<i data-lucide="plus" class="h-5 w-5 shrink-0 text-brand" aria-hidden="true"></i></button></h3><div id="faq-3" role="region" aria-labelledby="faq-b3" class="faq-panel pb-5 text-muted">Yes. We work with small businesses, startups, entrepreneurs, and larger organizations, and scope each project to fit the need.</div></div>
+    <div class="faq-item"><h3><button type="button" class="faq-btn flex min-h-[56px] w-full items-center justify-between gap-4 py-4 text-left font-display font-bold" aria-expanded="false" aria-controls="faq-4" id="faq-b4">Can you redesign an existing website?<i data-lucide="plus" class="h-5 w-5 shrink-0 text-brand" aria-hidden="true"></i></button></h3><div id="faq-4" role="region" aria-labelledby="faq-b4" class="faq-panel pb-5 text-muted">Yes. We review what you have, agree on what should change, and improve the design, structure, content, and technical foundation accordingly.</div></div>
+    <div class="faq-item"><h3><button type="button" class="faq-btn flex min-h-[56px] w-full items-center justify-between gap-4 py-4 text-left font-display font-bold" aria-expanded="false" aria-controls="faq-5" id="faq-b5">Do you provide ongoing website maintenance?<i data-lucide="plus" class="h-5 w-5 shrink-0 text-brand" aria-hidden="true"></i></button></h3><div id="faq-5" role="region" aria-labelledby="faq-b5" class="faq-panel pb-5 text-muted">Ongoing support can be discussed as part of your project. Tell us what you need and we will explain the options.</div></div>
+    <div class="faq-item"><h3><button type="button" class="faq-btn flex min-h-[56px] w-full items-center justify-between gap-4 py-4 text-left font-display font-bold" aria-expanded="false" aria-controls="faq-6" id="faq-b6">How do I get a quote for my project?<i data-lucide="plus" class="h-5 w-5 shrink-0 text-brand" aria-hidden="true"></i></button></h3><div id="faq-6" role="region" aria-labelledby="faq-b6" class="faq-panel pb-5 text-muted">Message us on WhatsApp, email us, or use the contact form with your project details. Pricing depends on scope, so we confirm requirements before quoting.</div></div>
+    <div class="faq-item"><h3><button type="button" class="faq-btn flex min-h-[56px] w-full items-center justify-between gap-4 py-4 text-left font-display font-bold" aria-expanded="false" aria-controls="faq-7" id="faq-b7">Can you help improve my website's security?<i data-lucide="plus" class="h-5 w-5 shrink-0 text-brand" aria-hidden="true"></i></button></h3><div id="faq-7" role="region" aria-labelledby="faq-b7" class="faq-panel pb-5 text-muted">We can review your site, recommend security best practices, and assess vulnerabilities where you have authorized it. This guidance does not replace a full independent security audit.</div></div>
+    <div class="faq-item"><h3><button type="button" class="faq-btn flex min-h-[56px] w-full items-center justify-between gap-4 py-4 text-left font-display font-bold" aria-expanded="false" aria-controls="faq-8" id="faq-b8">How do we get started?<i data-lucide="plus" class="h-5 w-5 shrink-0 text-brand" aria-hidden="true"></i></button></h3><div id="faq-8" role="region" aria-labelledby="faq-b8" class="faq-panel pb-5 text-muted">Contact us with a short description of what you want to achieve. We will follow up with questions and propose next steps.</div></div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="border-t border-zinc-200 bg-soft py-16 lg:py-24">
+  <div class="mx-auto grid max-w-6xl gap-12 px-5 sm:px-8 lg:grid-cols-[1fr_1.2fr] lg:gap-16">
+    <div>
+      <h2 class="text-3xl font-extrabold sm:text-4xl">Let's Build Something Valuable.</h2>
+      <ul class="mt-8 space-y-4">
+        <li class="flex items-center gap-3"><i data-lucide="mail" class="h-5 w-5 text-brand" aria-hidden="true"></i><a class="hover:text-brand hover:underline" href="mailto:contact@nexytech.com">contact@nexytech.com</a></li>
+        <li class="flex items-center gap-3"><i data-lucide="phone" class="h-5 w-5 text-brand" aria-hidden="true"></i><a class="hover:text-brand hover:underline" href="tel:+23481786364435">081786364435</a></li>
+      </ul>
+      <a href="https://wa.me/23481786364435?text=Hello%20NexyTech%2C%20I%20would%20like%20to%20discuss%20a%20digital%20project." target="_blank" rel="noopener noreferrer" class="mt-8 inline-flex min-h-[48px] items-center gap-2 rounded-md bg-brand px-6 font-semibold text-white transition hover:bg-deep"><svg class="h-5 w-5" aria-hidden="true"><use href="#wa"/></svg>WhatsApp Us</a>
+    </div>
+    <form id="contact-form" class="rounded-lg border border-zinc-200 bg-white p-6 sm:p-8" novalidate>
+      <p class="mb-5 text-sm text-muted">This form checks your details, then opens WhatsApp with your message ready to send. Nothing is sent until you press send in WhatsApp.</p>
+      <div class="space-y-5">
+        <div><label for="f-name" class="mb-1 block text-sm font-semibold">Full name</label><input id="f-name" name="name" type="text" autocomplete="name" required class="min-h-[44px] w-full rounded-md border border-zinc-300 px-3" aria-describedby="e-name"><p id="e-name" class="mt-1 hidden text-sm text-red-700" role="alert"></p></div>
+        <div><label for="f-email" class="mb-1 block text-sm font-semibold">Email address</label><input id="f-email" name="email" type="email" autocomplete="email" required class="min-h-[44px] w-full rounded-md border border-zinc-300 px-3" aria-describedby="e-email"><p id="e-email" class="mt-1 hidden text-sm text-red-700" role="alert"></p></div>
+        <div><label for="f-service" class="mb-1 block text-sm font-semibold">Service required</label>
+          <select id="f-service" name="service" required class="min-h-[44px] w-full rounded-md border border-zinc-300 bg-white px-3" aria-describedby="e-service">
+            <option value="">Select a service</option><option>Web Development</option><option>Graphics Design</option><option>UI/UX and Product Design</option><option>Digital Marketing</option><option>Cybersecurity</option><option>Branding and Creative Strategy</option><option>IT Consulting and Digital Transformation</option><option>Content Creation</option><option>Not sure yet</option>
+          </select><p id="e-service" class="mt-1 hidden text-sm text-red-700" role="alert"></p></div>
+        <div><label for="f-details" class="mb-1 block text-sm font-semibold">Project details</label><textarea id="f-details" name="details" rows="5" required minlength="10" class="w-full rounded-md border border-zinc-300 px-3 py-2" aria-describedby="e-details"></textarea><p id="e-details" class="mt-1 hidden text-sm text-red-700" role="alert"></p></div>
+      </div>
+      <button type="submit" class="mt-6 inline-flex min-h-[48px] w-full items-center justify-center rounded-md bg-brand px-6 font-semibold text-white transition hover:bg-deep sm:w-auto">Continue on WhatsApp</button>
+      <p id="form-status" class="mt-4 text-sm" role="status"></p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="bg-deep text-violet-100">
+  <div class="mx-auto grid max-w-6xl gap-10 px-5 py-14 sm:px-8 md:grid-cols-[1.4fr_1fr_1fr_1fr]">
+    <div>
+      <a href="#home" class="font-display text-xl font-extrabold text-white">NexyTech</a>
+      <p class="mt-3 max-w-xs text-sm leading-relaxed">A digital agency bringing web development, design, marketing, and security guidance together for businesses and organizations.</p>
+    </div>
+    <div><h2 class="font-display text-sm font-bold text-white">Services</h2><ul class="mt-3 space-y-1 text-sm"><li><a class="inline-block py-1 hover:text-white hover:underline" href="#services">Web Development</a></li><li><a class="inline-block py-1 hover:text-white hover:underline" href="#services">UI/UX Design</a></li><li><a class="inline-block py-1 hover:text-white hover:underline" href="#services">Digital Marketing</a></li><li><a class="inline-block py-1 hover:text-white hover:underline" href="#services">Cybersecurity</a></li></ul></div>
+    <div><h2 class="font-display text-sm font-bold text-white">Navigate</h2><ul class="mt-3 space-y-1 text-sm"><li><a class="inline-block py-1 hover:text-white hover:underline" href="#about">About</a></li><li><a class="inline-block py-1 hover:text-white hover:underline" href="#process">Our Process</a></li><li><a class="inline-block py-1 hover:text-white hover:underline" href="#projects">Projects</a></li><li><a class="inline-block py-1 hover:text-white hover:underline" href="#faq">FAQ</a></li></ul></div>
+    <div><h2 class="font-display text-sm font-bold text-white">Contact</h2><ul class="mt-3 space-y-1 text-sm"><li><a class="inline-block py-1 hover:text-white hover:underline" href="mailto:contact@nexytech.com">contact@nexytech.com</a></li><li><a class="inline-block py-1 hover:text-white hover:underline" href="tel:+23481786364435">081786364435</a></li><li><a class="inline-block py-1 hover:text-white hover:underline" href="https://wa.me/23481786364435" target="_blank" rel="noopener noreferrer">WhatsApp</a></li></ul>
+    <!-- TODO: add verified social profile links here (e.g. <li><a href="https://..." rel="noopener noreferrer">LinkedIn</a></li>). Also add Privacy Policy and Terms links once those pages exist. -->
+    </div>
+  </div>
+  <div class="border-t border-white/15 py-5 text-center text-sm">&copy; <span id="year">2026</span> NexyTech. All rights reserved.</div>
+</footer>
+
+<a href="https://wa.me/23481786364435?text=Hello%20NexyTech%2C%20I%20would%20like%20to%20discuss%20a%20digital%20project." target="_blank" rel="noopener noreferrer" aria-label="Chat with NexyTech on WhatsApp" class="fixed bottom-[max(1rem,env(safe-area-inset-bottom))] right-[max(1rem,env(safe-area-inset-right))] z-40 inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition hover:scale-105"><svg class="h-7 w-7" aria-hidden="true"><use href="#wa"/></svg></a>
+
+<script src="https://unpkg.com/lucide@0.453.0/dist/umd/lucide.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
